@@ -1,0 +1,26 @@
+Top Level --
+- starts with empty list
+- has search bar at the top to filter search for terms
+- accepts a search term and calls the HN API with that term as the query
+- loads the list
+- has a form input to search by date and author
+
+1. App
+  x. fetches data and holds in state 
+  x. then passes as props to listarticles 
+  x. passes methods as props to searchform
+
+2. Search Form
+  a. search by tag, date, author, title
+  x. uses methods passed as props to store filtered data in App
+
+3. List Articles
+  x. maps over props passed to it from App and pass props to DisplayArticleCard to render each card 
+  b. make it beautiful
+  c. bonus - add sort to list most recent or alphabetical
+
+4. DisplayArticleCard
+  a. renders props into a stylish view for the user
+  x. the title is clickable and opens a new tab to the url of the article 
+  x. displays points, author, date created and url 
+  d. make it beautiful
